@@ -281,7 +281,7 @@ end)
 
 do
     local Window = Fluent:CreateWindow({
-        Title = string.format("%s <b><i>%s</i></b>", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot"), #Status > 0 and Status or "FREE"),
+        Title = string.format("%s <b><i>%s</i></b>", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz"), #Status > 0 and Status or "FREE"),
         SubTitle = "By @otto.smk",
         TabWidth = UISettings.TabWidth,
         Size = UDim2.fromOffset(table.unpack(UISettings.Size)),
@@ -295,7 +295,7 @@ do
     Window:SelectTab(1)
 
     Tabs.Aimbot:AddParagraph({
-        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
         Content = "Universal Aim Assist Framework\ndiscord.gg/skiddonz.cc"
     })
 
@@ -542,7 +542,7 @@ do
     Tabs.Bots = Window:AddTab({ Title = "Bots", Icon = "bot" })
 
     Tabs.Bots:AddParagraph({
-        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
         Content = "Universal Aim Assist Framework\ndiscord.gg/skiddonz.cc"
     })
 
@@ -700,7 +700,7 @@ do
     Tabs.Checks = Window:AddTab({ Title = "Checks", Icon = "list-checks" })
 
     Tabs.Checks:AddParagraph({
-        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
         Content = "Universal Aim Assist Framework\ndiscord.gg/skiddonz.cc"
     })
 
@@ -1049,15 +1049,15 @@ do
     end)
 
     PremiumChecksSection:AddParagraph({
-        Title = string.format("%s 💫PREMIUM💫", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-        Content = "✨Upgrade to unlock all Options✨\njoin discord.gg/skiddonz.cc to buy"
+        Title = string.format("%s PREMIUM", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
+        Content = "Upgrade to unlock all Options\njoin discord.gg/skiddonz.cc to buy"
     })
 
     if DEBUG or getfenv().Drawing and getfenv().Drawing.new then
         Tabs.Visuals = Window:AddTab({ Title = "Visuals", Icon = "box" })
 
         Tabs.Visuals:AddParagraph({
-            Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
             Content = "Universal Aim Assist Framework\ndiscord.gg/skiddonz.cc"
         })
 
@@ -1299,7 +1299,7 @@ do
     Tabs.Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
     Tabs.Settings:AddParagraph({
-        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+        Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
         Content = "Universal Aim Assist Framework\ndiscord.gg/skiddonz.cc"
     })
 
@@ -1647,7 +1647,7 @@ do
         elseif ShowWarning then
             Window:Dialog({
                 Title = "Warning",
-                Content = string.format("Your Software does not support all the Features of %s FREE!", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+                Content = string.format("Your Software does not support all the Features of %s FREE!", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
                 Buttons = {
                     {
                         Title = "Confirm"
@@ -1656,8 +1656,8 @@ do
             })
         else
             Window:Dialog({
-                Title = string.format("%s 💫PREMIUM💫", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
-                Content = "✨Upgrade to unlock all Options✨ – join discord.gg/skiddonz.cc to buy",
+                Title = string.format("%s PREMIUM", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
+                Content = "Upgrade to unlock all Options – join discord.gg/skiddonz.cc to buy",
                 Buttons = {
                     {
                         Title = "Confirm"
@@ -1674,7 +1674,7 @@ end
 local function Notify(Message)
     if Fluent and typeof(Message) == "string" then
         Fluent:Notify({
-            Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Open Aimbot")),
+            Title = string.format("%s skiddonz.cc", string.format(MonthlyLabels[os.date("*t").month], "Skiddonz")),
             Content = Message,
             SubContent = "By otto.smk",
             Duration = 1.5
@@ -1682,7 +1682,7 @@ local function Notify(Message)
     end
 end
 
-Notify("✨Upgrade to unlock all Options✨")
+Notify("Upgrade to unlock all Options")
 
 
 --! Fields Handler
